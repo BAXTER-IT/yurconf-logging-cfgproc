@@ -28,6 +28,7 @@
 			<build>
 				<plugins>
 					<plugin>
+						<!-- This declaration is needed just to ensure the proper order of plugins executions -->
 						<artifactId>maven-jar-plugin</artifactId>
 					</plugin>
 					<plugin>
@@ -48,13 +49,12 @@
 			<build>
 				<plugins>
 					<plugin>
+						<!-- This declaration is needed just to ensure the proper order of plugins executions -->
 						<artifactId>maven-jar-plugin</artifactId>
 					</plugin>
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>rpm-maven-plugin</artifactId>
-						<configuration>
-						</configuration>
 					</plugin>
 				</plugins>
 			</build>

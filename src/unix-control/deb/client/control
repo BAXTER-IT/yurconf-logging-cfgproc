@@ -1,0 +1,8 @@
+Package: [[artifactId]]-om
+Version: [[version]]
+Section: ${unix.package.group.name}
+Priority: low
+Architecture: all
+Description: [[description]]
+Maintainer: BAXTER Technologies <support@baxter-it.com>
+Depends: yurconf-om ( >= ${yurconf.version} )
