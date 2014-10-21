@@ -195,4 +195,9 @@
         </xsl:choose>
     </xsl:template>
 
+    <xsl:template match="bcl:threshold">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level><xsl:value-of select="."/></level>
+        </filter>
+    </xsl:template>
 </xsl:stylesheet>
